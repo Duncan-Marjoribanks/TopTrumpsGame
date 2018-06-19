@@ -33,9 +33,14 @@ describe('Game', function(){
     const actualWinner = game.compareCardAgility(card1, card2);
     assert.strictEqual(actualWinner,card1);
   })
-  
+
   it('should compare 2 cards intelligence', function(){
     const actualWinner = game.compareCardIntelligence(card1, card2);
     assert.strictEqual(actualWinner,card2);
+  })
+
+  it("should be able play a turn and set who's turn it is", function(){
+    const actualPlayersTurn = game.playTurn(player1, player2);
+    assert.strictEqual(actualPlayersTurn, player2);
   })
 })

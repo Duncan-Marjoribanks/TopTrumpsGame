@@ -24,5 +24,4 @@ it('should be able to lose a card', function(){
   assert.strictEqual(actualHandSize, 0);
 })
 
-
 })
